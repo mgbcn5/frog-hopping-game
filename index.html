@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frog Hop</title>
+
+  <link rel="stylesheet" href="output.css">
+</head>
+
+
+<body class="min-h-screen bg-gradient-to-b from-green-100 to-green-300 flex items-center justify-center p-6">
+
+  <main class="bg-white/80 p-6 sm:p-8 rounded-3xl shadow-2xl text-center">
+
+    <!-- Game Title -->
+    <div class="mb-6">
+
+      <p class="text-green-700 font-semibold uppercase tracking-widest text-sm">
+        Mini Game
+      </p>
+
+      <h1 class="text-4xl font-bold text-green-900 mt-1">
+        🐸 Frog Hop
+      </h1>
+
+      <p class="text-gray-600 mt-2">
+        Help the frog hop across the pond!
+      </p>
+
+      <p class="text-sm text-gray-500 mt-1">
+        Use ↑ ↓ ← → to move
+      </p>
+
+    </div>
+
+
+    <!-- Pond -->
+    <div class="relative">
+
+      <!-- Start Label -->
+      <div class="absolute -top-3 left-4 bg-green-700 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
+        START
+      </div>
+
+
+      <!-- 2 x 2 Pond Grid -->
+      <div class="grid grid-cols-2 w-[80vw] max-w-96 aspect-square rounded-3xl overflow-hidden shadow-xl border-8 border-green-700">
+
+        <!-- Water Tile 1 -->
+        <div class="bg-cyan-400 flex items-center justify-center">
+
+          <div class="lily-pad w-20 h-16 sm:w-28 sm:h-24 md:w-32 md:h-28 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-4 border-green-600">
+          </div>
+
+        </div>
+
+
+        <!-- Water Tile 2 -->
+        <div class="bg-sky-400 flex items-center justify-center">
+
+          <div class="lily-pad w-20 h-16 sm:w-28 sm:h-24 md:w-32 md:h-28 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-4 border-green-600">
+          </div>
+
+        </div>
+
+
+        <!-- Water Tile 3 -->
+        <div class="bg-sky-400 flex items-center justify-center">
+
+          <div class="lily-pad w-20 h-16 sm:w-28 sm:h-24 md:w-32 md:h-28 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-4 border-green-600">
+          </div>
+
+        </div>
+
+
+        <!-- Water Tile 4 -->
+        <div class="bg-cyan-400 flex items-center justify-center">
+
+          <div class="lily-pad w-20 h-16 sm:w-28 sm:h-24 md:w-32 md:h-28 bg-green-500 rounded-full flex items-center justify-center shadow-lg border-4 border-green-600">
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Finish Label -->
+      <div class="absolute -bottom-3 right-4 bg-yellow-400 text-green-950 text-xs font-bold px-3 py-1 rounded-full">
+        FINISH 🏁
+      </div>
+
+    </div>
+
+
+    <!-- Game Instructions -->
+    <div class="mt-8 bg-green-100 rounded-2xl px-5 py-3">
+
+      <p class="text-green-800 text-sm">
+        🌿 Stay on the lily pads and reach the finish line!
+      </p>
+
+    </div>
+
+
+    <!-- Win Message -->
+    <p id="win-message" class="hidden mt-6 text-2xl font-bold text-green-700">
+      🎉 You made it! 🐸
+    </p>
+
+  </main>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
